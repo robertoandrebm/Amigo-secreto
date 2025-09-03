@@ -15,10 +15,10 @@ function agregarAmigo() {
         alert("Por favor, inserte un nombre.");
         return;
     }
-    amigos.push(nombreAmigo); // lo agrega al arreglo
+    amigos.push(nombreAmigo); // agrega nombres a arreglo
     console.log("Lista de amigos:", amigos);
-    //Limpiar el campo de entrada
-    document.getElementById('amigo').value = ""; // limpia el input
+    //Limpia el campo de entrada
+    document.getElementById('amigo').value = "";
     actualizarLista();
 }
 function actualizarLista(){
@@ -30,7 +30,7 @@ function actualizarLista(){
     }
 }
 function sortearAmigo() {
-    // 1. Validar que haya amigos en el array
+    // 1. Validar que haya mas de 2 amigos en el array
     if (amigos.length < 2) {
         alert("No hay suficientes amigos para hacer un sorteo.");
         return;
